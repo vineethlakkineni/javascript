@@ -1,0 +1,103 @@
+<html>
+<head>
+// into whereto output
+<script>
+
+function myFunction(){
+//document.getElementById('demo5').innerHTML="Paragraph changed";
+document.getElementById('demo5').style.display='none';//hide
+document.getElementById('demo6').style.display='block';//hide
+}
+
+//var x=4,y=5; 
+
+//document.getElementById("add").innerHTML= 4+6; error Cannot set property 'innerHTML' of null
+
+</script>
+<body>
+<h1>My first Java Script</h1>
+<button type="button" 
+onclick="document.getElementById('demo').innerHTML=Date()">click me to disolay date and time</button>
+
+<p id="demo">hello</p>
+
+<h1>What can javascript do?</h1>
+
+<button type="button" onclick="document.getElementById('dem').innerHTML='hello javascript'">Click me</button>
+<p id = 'dem'>Java script can change html element</p>
+
+
+<h1>What can javascript do?</h1>
+<p>javascript can change html attribute values</p>
+<p>in this case javascript changes the value of an src attribute of an image</p>
+
+<button type="button" onclick="document.getElementById('myImage').src='lightbulbon.jpg'">turn on the light</button>
+
+<img id="myImage" src="lightbulboff.jpg" style="width:100px">
+
+<button type="button" onclick="document.getElementById(myImage).src='lightbulboff.jpg'">turn off the light</button>
+
+<h1>What can js do?</h1>
+<p id="demo1">Javascript can change the style of an html element</p>
+<button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">clickmetoincreasefontsize</button>
+
+
+//javascript can hide html element
+<h1>What can js do</h1>
+<p id="demo2">javascript can hide html element</p>
+<button type="button" onclick="document.getElementById('demo2').style.display='none'">Clickmetohide</button>
+
+
+//javascript can show html element
+<h1>What can js do</h1>
+<p>javascript can show html element</p>
+<p id="demo3" style='display:none'>Hello javascript</p>
+<button onclick="document.getElementById('demo3').style.display='block'">clickmetoshow</button>
+
+//javascript to hide and show html elements
+<h1>what can js do?</h1>
+<p id="demo4" style="display:none">Hello javascript</p>
+<button type="button" onclick="document.getElementById('demo4').style.display='block'">clickmeto show</button>
+<button type="button" onclick="document.getElementById('demo4').style.display='none'">clickmeto hide</button>
+
+
+<h1>Javascript in head</h1>
+<p id="demo5">A paragraph</p>
+<p id="demo6" style="display:none">paragraph changed</p>
+<button type="button" onclick="myFunction()">try it</button>
+
+//javascript can display date in different ways
+//1.writing into an html element using innerHTML.
+//2.writing into an html output using document.write();
+//3.writing into an alert box using windows.alert();
+//4.writing into browser console using console.log();
+
+<h1>My first web page</h1>
+<p>My first paragraph</p>
+<p id="add"></p>
+<script>
+var x=5,y=6;
+document.getElementById("add").innerHTML= x+y;
+</script>
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+document.write(5 + 6);
+</script>
+
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+//all html elements vanish and prints 5+6 (11);
+<button onclick="document.write(5+6)">try it</button>
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+<script>
+console.log(5+6);
+</script>
+</body>
+</head>
+</html>
